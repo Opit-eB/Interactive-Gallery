@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="gallery.css">
+  <script src="script.js"></script>
+</head>
+<body onload="addTabFocus()">
+  <main>
+    <h1>Interactive Photo Gallery</h1>
+
+    <div id="image" aria-live="polite">Hover over or focus an image below to display here.</div>
+
+    <section class="thumbnails" aria-label="Photo thumbnails">
+      <figure class="preview" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img alt="Orange sunset with a yellow sun sinking into a blue sea" src="img/sunset.svg">
+      </figure>
+      <figure class="preview" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img alt="Snow-capped grey mountain above a green valley" src="img/mountain.svg">
+      </figure>
+      <figure class="preview" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img alt="Three dark green pine trees in a misty forest" src="img/forest.svg">
+      </figure>
+      <figure class="preview" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img alt="Starry night sky with a full moon" src="img/night.svg">
+      </figure>
+      <figure class="preview" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img alt="Golden sand dunes under a pale sun" src="img/desert.svg">
+      </figure>
+      <figure class="preview" onmouseover="upDate(this)" onmouseout="unDo()" onfocus="upDate(this)" onblur="unDo()">
+        <img alt="Red barn with a white door in a green field" src="img/barn.svg">
+      </figure>
+    </section>
+  </main>
+</body>
+</html>
